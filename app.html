@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+
+  <nav class="blue-grey" role="navigation">
+    <div class="nav-wrapper container">
+      &nbsp; &nbsp;  Pushnews
+      
+      <ul class="right hide-on-med-and-down">
+        
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <img src="sidenav.png" width="300px">
+        <li><a href="#">How it Works?</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Help and Feedback</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="large mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+    
+
+  
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#test1">Daily Digest</a></li>
+        <li class="tab col s3"><a href="#test2">Latest</a></li>
+        
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+    </br>
+      <center><img src="http://picasion.com/pic80/2c3510be823aafd628508e7d775681c0.gif"></center>
+
+      
+          <div class="card light-blue accent-3">
+            <div class="card-content white-text">
+ 
+
+              
+
+              <div id="id01"></div>
+             <script>
+             function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i<arr.length; i++) {
+        out += '<img src="' + arr[i].image + '" class="responsive-img materialboxed"><h5>' + arr[i].head + '</h5><p class="flow-text">' + arr[i].para + '</p></br>';
+        
+        
+    }
+    document.getElementById("id01").innerHTML = out;
+}
+             </script>
+
+
+
+             
+            </div>
+            <div class="card-action">
+              <a class="modal-trigger white-text" href="#modal3">Reference</a>
+              <a href="#" class="white-text" onclick="window.open('https://www.wire.com/', '_system');">Sponsors</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+             
+
+    </div>
+    <div id="test2" class="col s12">
+      
+      <center><img src="http://picasion.com/pic80/709e90294fd5c8494d49267061df8a45.gif"></center>
+     
+          <div class="card red accent-2">
+            <div class="card-content white-text">
+
+              <span class="card-title">Trending&nbsp;<i class="mdi-action-trending-up"></i></span>
+                           <script type="text/javascript">
+
+
+<!--
+  var currentDate = new Date()
+  var day = currentDate.getDate()
+  var month = currentDate.getMonth() + 1
+  var year = currentDate.getFullYear()
+  document.write("<h5>" + day + "/" + month + "/" + year + "</h5>")
+
+  var currentTime = new Date()
+  var hours = currentTime.getHours()
+  var minutes = currentTime.getMinutes()
+
+  if (minutes < 10)
+  minutes = "0" + minutes
+
+  var suffix = "AM";
+  if (hours >= 12) {
+  suffix = "PM";
+  hours = hours - 12;
+  }
+  if (hours == 0) {
+  hours = 12;
+  }
+
+  document.write("<h6>" + hours + ":" + minutes + " " + suffix + "</h6>") </script>
+              <div id="id02"></div>
+             <script>
+             function myFunction2(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i<arr.length; i++) {
+        out += '<blockquote class="flow-text">' + arr[i].news + '</blockquote></br>';
+        
+        
+    }
+    document.getElementById("id02").innerHTML = out;
+}
+             </script>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+  </div>
+        </div>
+
+
+
+             
+
+       
+     
+
+             
+            
+    </br>
+
+
+
+        
+      
+     
+
+        
+
+      
+
+          <div id="modal3" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <i class="mdi-file-folder circle"></i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-file-folder circle"></i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-action-assessment circle green"></i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-av-play-arrow circle red"></i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+         <div id="modal4" class="modal bottom-sheet">
+          <div class="modal-content">
+              
+          <div class="card orange darken-1 small">
+            <div class="card-content white-text">
+              <span class="card-title"><i class="mdi-av-play-circle-outline"></i>&nbsp;Listen</span>
+
+              
+
+              <div style="left: 0px; width: 100%; height: 400px; position: relative;"><iframe src="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F135067662&amp;show_artwork=true" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="top: 0px; left: 0px; width: 100%; height: 30%; position: absolute;"></iframe></div>
+
+
+
+              
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+            
+
+
+
+            
+
+           
+          </div>
+        </div>
+
+
+
+
+
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large  pink accent-3 modal-trigger" href="#modal4">
+      <i class="large mdi-av-play-circle-fill"></i>
+    </a>
+   
+  </div>
+
+
+  
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="http://5wordsapp.pancakeapps.com/pushnews.js"></script>
+  <script src="http://5wordsapp.pancakeapps.com/latest.js"></script>
+
+  </body>
+</html>
